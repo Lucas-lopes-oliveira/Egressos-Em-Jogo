@@ -666,6 +666,13 @@ body {
     margin: 0;
 }
 
+.footer-logo {
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
 
 /* =========================
    RESPONSIVIDADE
@@ -684,6 +691,7 @@ body {
     .hero {
         min-height: 550px;
         background-position: center;
+        padding: 50px 0;
     }
 
     .hero h1 {
@@ -699,14 +707,21 @@ body {
     }
     
     .hero-logo-container {
-        position: static;
-        transform: none;
-        width: 100%;
-        margin-top: 30px;
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30%;
     }
 
     .hero-logo {
-        max-width: 250px;
+        width: 100%;
+        max-width: 150px;
+        border-radius: 20px;
+    }
+
+    .hero-content {
+    width: 70%;
     }
 
     .about-image {
