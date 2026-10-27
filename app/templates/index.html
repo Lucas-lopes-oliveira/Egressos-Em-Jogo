@@ -463,35 +463,94 @@
 
         </div>
 
-            <div class="col-md-6 col-lg-4">
-                <div class="materia-card">
-                    <img
-                        src="{{ url_for('static', filename='uploads/foto-entrega2.jpeg') }}"
-                        alt="Entrega das doações arrecadadas pelo Egressos em Jogo"
-                    >
+                <div class="col-md-6 col-lg-4">
+                    <div class="materia-card">
 
-                    <div class="materia-content">
-                        <span class="materia-categoria">Doação</span>
+                        <!-- Carrossel de fotos -->
+                        <div id="carrossel-entrega" class="carousel slide"
+                            data-bs-ride="false">
 
-                        <h3>
-                            Egressos em Jogo realiza entrega das doações ao LEAN
-                        </h3>
+                            <div class="carousel-inner">
 
-                        <p>
-                            No dia 19 de outrubro, o projeto Egressos em Jogo realizou
-                            a entrega de mais de 16 quilos de leite em pó arrecadados ao LEAN —
-                            Lar Espírita Alvorada Nova. A iniciativa reforça
-                            o compromisso do projeto com a solidariedade e
-                            o cuidado com a comunidade.
-                        </p>
+                                <div class="carousel-item active">
+                                    <img
+                                        src="{{ url_for('static', filename='uploads/entrega1.jpeg') }}"
+                                        class="d-block w-100"
+                                        alt="Entrega das doações aos beneficiários"
+                                    >
+                                </div>
 
-                        <span class="materia-data">
-                            <i class="bi bi-calendar-event"></i>
-                            Outubro de 2026
-                        </span>
+                                <div class="carousel-item">
+                                    <img
+                                        src="{{ url_for('static', filename='uploads/entrega2.jpeg') }}"
+                                        class="d-block w-100"
+                                        alt="Materiais arrecadados na campanha"
+                                    >
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img
+                                        src="{{ url_for('static', filename='uploads/entrega3.jpeg') }}"
+                                        class="d-block w-100"
+                                        alt="Registro da entrega das doações"
+                                    >
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img
+                                        src="{{ url_for('static', filename='uploads/entrega4.jpeg') }}"
+                                        class="d-block w-100"
+                                        alt="Equipe do Egressos em Jogo durante a ação"
+                                    >
+                                </div>
+
+                            </div>
+
+                            <!-- Botão anterior -->
+                            <button class="carousel-control-prev"
+                                    type="button"
+                                    data-bs-target="#carrossel-entrega"
+                                    data-bs-slide="prev"
+                                    aria-label="Foto anterior">
+                                <span class="carousel-control-prev-icon"
+                                    aria-hidden="true"></span>
+                            </button>
+
+                            <!-- Botão próximo -->
+                            <button class="carousel-control-next"
+                                    type="button"
+                                    data-bs-target="#carrossel-entrega"
+                                    data-bs-slide="next"
+                                    aria-label="Próxima foto">
+                                <span class="carousel-control-next-icon"
+                                    aria-hidden="true"></span>
+                            </button>
+
+                        </div>
+
+                        <!-- Conteúdo da notícia -->
+                        <div class="materia-content">
+                            <span class="materia-categoria">Solidariedade</span>
+
+                            <h3>
+                                Egressos em Jogo realiza entrega das doações ao LEAN
+                            </h3>
+
+                            <p>
+                                A campanha solidária resultou na entrega dos donativos
+                                arrecadados ao LEAN — Lar Espírita Alvorada Nova.
+                                A iniciativa reforça o compromisso do projeto com a
+                                solidariedade e o cuidado com a comunidade.
+                            </p>
+
+                            <span class="materia-data">
+                                <i class="bi bi-calendar-event"></i>
+                                Outubro de 2026
+                            </span>
+                        </div>
+
                     </div>
                 </div>
-            </div>
 
         </div>
 
