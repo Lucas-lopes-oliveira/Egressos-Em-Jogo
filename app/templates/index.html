@@ -152,9 +152,57 @@
 
             <div class="col-lg-6">
 
-                <div class="about-image">
-                    <img src="../static/uploads/projeto-pelada1.jpeg"
-                         alt="Futsal e integração dos egressos">
+                <div id="carrossel-pelada" class="carousel slide"
+                    data-bs-ride="false">
+
+                    <div class="carousel-inner about-image">
+
+                        <div class="carousel-item active about-image">
+                            <img
+                                src="{{ url_for('static', filename='uploads/projeto-pelada1.jpeg') }}"
+                                class="d-block w-100"
+                                alt="Entrega das doações aos beneficiários"
+                            >
+                        </div>
+
+                        <div class="carousel-item about-image">
+                            <img
+                                src="{{ url_for('static', filename='uploads/projeto-pelada2(Paisagem).jpeg') }}"
+                                class="d-block w-100"
+                                alt="Materiais arrecadados na campanha"
+                            >
+                        </div>
+
+                        <div class="carousel-item about-image">
+                            <img
+                                src="{{ url_for('static', filename='uploads/projeto-pelada3(paisagem).jpeg') }}"
+                                class="d-block w-100"
+                                alt="Registro da entrega das doações"
+                            >
+                        </div>
+
+                    </div>
+
+                    <!-- Botão anterior -->
+                    <button class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carrossel-pelada"
+                            data-bs-slide="prev"
+                            aria-label="Foto anterior">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                    </button>
+
+                    <!-- Botão próximo -->
+                    <button class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carrossel-pelada"
+                            data-bs-slide="next"
+                            aria-label="Próxima foto">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                    </button>
+
                 </div>
 
             </div>
@@ -312,16 +360,6 @@
                         IFRN — Campus Parnamirim.
                     </p>
 
-                </div>
-
-                <div class="aviso-doacao">
-                    <i class="bi bi-info-circle-fill"></i>
-
-                    <span>
-                        A arrecadação acontece exclusivamente
-                        de forma presencial. Entregue sua doação
-                        em um dos pontos indicados.
-                    </span>
                 </div>
 
             </div>
